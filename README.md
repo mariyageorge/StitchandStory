@@ -24,11 +24,11 @@ To deploy the **StitchandStory** platform locally:
    ```bash
    git clone https://github.com/mariyageorge/StitchandStory.git
    cd StitchandStory
-````
+```
 
 2. **Set Up the Database**:
 
-   * Import the provided `database.sql` file into your MySQL database.
+   - Import the provided `database.sql` file into your MySQL database.
 
      ```sql
      CREATE DATABASE stitchandstory;
@@ -36,11 +36,11 @@ To deploy the **StitchandStory** platform locally:
      SOURCE database.sql;
      ```
 
-   * Ensure the `orders` table is correctly configured as per the `fix_orders_table.sql` script.
+   - Ensure the `orders` table is correctly configured as per the `fix_orders_table.sql` script if provided.
 
 3. **Configure Database Connection**:
 
-   * Edit `config.php` to include your database credentials:
+   - Edit `config.php` to include your database credentials:
 
      ```php
      <?php
@@ -53,21 +53,25 @@ To deploy the **StitchandStory** platform locally:
 
 4. **Set Up the Web Server**:
 
-   * Place the project files in your web server's root directory (e.g., `htdocs` for XAMPP).
-   * Ensure `.htaccess` is properly configured for URL rewriting.
+   - Place the project files in your web server's root directory (e.g., `htdocs` for XAMPP).
+   - Ensure `.htaccess` is properly configured for URL rewriting.
 
 5. **Access the Application**:
 
-   * Open your browser and navigate to `http://localhost/StitchandStory/`.
+   - Open your browser and navigate to:
+
+     ```
+     http://localhost/StitchandStory/
+     ```
 
 ---
 
-## 📦 Tech Stack
+## 🛠️ Tech Stack
 
-* **Frontend**: HTML, CSS, JavaScript
-* **Backend**: PHP
-* **Database**: MySQL
-* **Web Server**: Apache
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: PHP
+- **Database**: MySQL
+- **Web Server**: Apache
 
 ---
 
@@ -75,11 +79,27 @@ To deploy the **StitchandStory** platform locally:
 
 1. **Install XAMPP/WAMP**: Download and install XAMPP or WAMP for a local development environment.
 2. **Start Services**: Launch Apache and MySQL services.
-3. **Import Database**: Use phpMyAdmin to import `database.sql`.
-4. **Configure PHP Files**: Ensure all PHP files have the correct paths and permissions.
-5. **Test Application**: Navigate to `http://localhost/StitchandStory/` to verify the setup.
+3. **Import Database**: Use phpMyAdmin or MySQL CLI to import `database.sql`.
+4. **Configure PHP Files**: Ensure all PHP files have correct paths and database credentials.
+5. **Test Application**: Open the browser at `http://localhost/StitchandStory/` to verify the setup.
 
+---
 
-* [FIX_DATABASE_ERROR.md](FIX_DATABASE_ERROR.md): Instructions to resolve common database issues.
-* [PAYMENT_FORM_UPDATE.md](PAYMENT_FORM_UPDATE.md): Guide to updating payment forms.
+## 📄 Features
 
+- User Registration & Login
+- Product Catalog (Knitting, Crochet, Cross-Stitch Kits)
+- Shopping Cart & Checkout
+- Order Management (View Past Orders)
+- Payment Integration
+- Admin Dashboard (Manage Products & Orders)
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a pull request detailing your changes.
