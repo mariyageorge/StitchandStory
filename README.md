@@ -1,3 +1,4 @@
+
 # StitchandStory
 
 **A beginner-friendly crafting platform offering knitting, crochet, and cross-stitch kits with step-by-step tutorials.**
@@ -8,39 +9,37 @@
 
 - **User Registration & Login**: Secure authentication for users to create and manage accounts.
 - **Product Catalog**: Display of various crafting kits, including knitting, crochet, and cross-stitch sets.
-- **Shopping Cart**: Functionality to add, view, and modify items before checkout.
-- **Order Management**: Users can view their order history and track current orders.
+- **Shopping Cart**: Add, view, and modify items before checkout.
+- **Order Management**: View order history and track current orders.
 - **Payment Integration**: Seamless payment processing for kit purchases.
-- **Admin Dashboard**: Admins can manage products, view orders, and update site content.
+- **Admin Dashboard**: Manage products and orders efficiently.
 
 ---
 
 ## 🚀 Deployment
 
-To deploy the **StitchandStory** platform locally:
+Follow these steps to deploy **StitchandStory** locally:
 
-1. **Clone the Repository**:
-
+1. **Clone the Repository**
    ```bash
    git clone https://github.com/mariyageorge/StitchandStory.git
    cd StitchandStory
-```
+````
 
-2. **Set Up the Database**:
+2. **Set Up the Database**
 
-   - Import the provided `database.sql` file into your MySQL database.
+   * Import the provided `database.sql` file into MySQL:
 
      ```sql
      CREATE DATABASE stitchandstory;
      USE stitchandstory;
      SOURCE database.sql;
      ```
+   * Ensure the `orders` table is correctly configured as per the `fix_orders_table.sql` script if provided.
 
-   - Ensure the `orders` table is correctly configured as per the `fix_orders_table.sql` script if provided.
+3. **Configure Database Connection**
 
-3. **Configure Database Connection**:
-
-   - Edit `config.php` to include your database credentials:
+   * Edit `config.php` with your database credentials:
 
      ```php
      <?php
@@ -51,14 +50,14 @@ To deploy the **StitchandStory** platform locally:
      ?>
      ```
 
-4. **Set Up the Web Server**:
+4. **Set Up the Web Server**
 
-   - Place the project files in your web server's root directory (e.g., `htdocs` for XAMPP).
-   - Ensure `.htaccess` is properly configured for URL rewriting.
+   * Place the project files in your web server’s root directory (e.g., `htdocs` for XAMPP).
+   * Ensure `.htaccess` is properly configured for URL rewriting.
 
-5. **Access the Application**:
+5. **Access the Application**
 
-   - Open your browser and navigate to:
+   * Open your browser and navigate to:
 
      ```
      http://localhost/StitchandStory/
@@ -68,38 +67,41 @@ To deploy the **StitchandStory** platform locally:
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: PHP
-- **Database**: MySQL
-- **Web Server**: Apache
+* **Frontend**: HTML, CSS, JavaScript
+* **Backend**: PHP
+* **Database**: MySQL
+* **Web Server**: Apache
 
 ---
 
 ## 🛠️ Setup Instructions
 
-1. **Install XAMPP/WAMP**: Download and install XAMPP or WAMP for a local development environment.
-2. **Start Services**: Launch Apache and MySQL services.
-3. **Import Database**: Use phpMyAdmin or MySQL CLI to import `database.sql`.
-4. **Configure PHP Files**: Ensure all PHP files have correct paths and database credentials.
-5. **Test Application**: Open the browser at `http://localhost/StitchandStory/` to verify the setup.
-
----
-
-## 📄 Features
-
-- User Registration & Login
-- Product Catalog (Knitting, Crochet, Cross-Stitch Kits)
-- Shopping Cart & Checkout
-- Order Management (View Past Orders)
-- Payment Integration
-- Admin Dashboard (Manage Products & Orders)
+1. Install **XAMPP** or **WAMP** for a local development environment.
+2. Start **Apache** and **MySQL** services.
+3. Import the `database.sql` file via **phpMyAdmin** or **MySQL CLI**.
+4. Configure PHP files with correct paths and database credentials.
+5. Test the application at `http://localhost/StitchandStory/`.
 
 ---
 
 ## 🤝 Contributing
 
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
+2. Create a new branch:
+
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes:
+
+   ```bash
+   git commit -am 'Add new feature'
+   ```
+4. Push to the branch:
+
+   ```bash
+   git push origin feature/your-feature
+   ```
 5. Open a pull request detailing your changes.
+
+---
