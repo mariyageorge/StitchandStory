@@ -1,5 +1,4 @@
 
-````markdown
 # StitchandStory
 
 **A beginner-friendly crafting platform offering knitting, crochet, and cross-stitch kits with step-by-step tutorials.**
@@ -116,3 +115,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 ```
+
