@@ -24,10 +24,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validation
     if (empty($username) || empty($email) || empty($password) || empty($confirm_password)) {
         $error = 'All fields are required!';
+    } elseif (strlen($username) < 3) {
+        $error = 'Username must be at least 3 characters long!';
+    } elseif (strlen($username) > 16) {
+        $error = 'Username must not exceed 16 characters!';
+    } elseif (!preg_match('/^[a-zA-Z0-9]+$/', $username)) {
+        $error = 'Username can only contain letters and numbers!';
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = 'Invalid email format!';
-    } elseif (strlen($password) < 6) {
-        $error = 'Password must be at least 6 characters long!';
+    } elseif (strlen($password) < 8) {
+        $error = 'Password must be at least 8 characters long!';
     } elseif ($password !== $confirm_password) {
         $error = 'Passwords do not match!';
     } else {
@@ -123,6 +129,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p>&copy; 2025 Stitch & Story. All rights reserved. Made with love and crochet hooks 💗</p>
         </div>
     </footer>
+    
+    <!-- JavaScript for live validation -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
 

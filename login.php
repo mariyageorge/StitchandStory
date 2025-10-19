@@ -99,6 +99,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p>&copy; 2025 Stitch & Story. All rights reserved. Made with love and crochet hooks 💗</p>
         </div>
     </footer>
+    
+    <!-- JavaScript for live validation -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
 

@@ -267,6 +267,27 @@ body {
     margin-top: 5px;
 }
 
+/* Real-time validation messages */
+.validation-message {
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.validation-message.error {
+    color: #e74c3c;
+    background-color: #fee;
+    border-left: 3px solid #e74c3c;
+}
+
+.validation-message.success {
+    color: #27ae60;
+    background-color: #efe;
+    border-left: 3px solid #27ae60;
+}
+
 .success {
     color: #27ae60;
     font-size: 14px;

@@ -13,3 +13,4 @@ SHOW COLUMNS FROM orders;
 -- Success message
 SELECT 'Orders table updated successfully!' as Status;
 
+

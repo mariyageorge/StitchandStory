@@ -119,23 +119,8 @@ class Database {
         )";
         $this->conn->query($order_items_table);
 
-        // Check and update existing tables for any missing columns
-        $this->updateExistingTables();
-
         // Insert sample products if table is empty
         $this->insertSampleProducts();
-    }
-
-    /**
-     * Update existing tables with missing columns
-     */
-    private function updateExistingTables() {
-        // Check if orders table has created_at column
-        $check = $this->conn->query("SHOW COLUMNS FROM orders LIKE 'created_at'");
-        if ($check && $check->num_rows == 0) {
-            // Add created_at column to orders table
-            $this->conn->query("ALTER TABLE orders ADD COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP AFTER order_status");
-        }
     }
 
     /**
