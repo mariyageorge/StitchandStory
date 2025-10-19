@@ -1,6 +1,3 @@
-Here’s a ready-to-paste version of your `README.md` for **StitchandStory**:
-
-````markdown
 # StitchandStory
 
 **A beginner-friendly crafting platform offering knitting, crochet, and cross-stitch kits with step-by-step tutorials.**
@@ -85,3 +82,4 @@ To deploy the **StitchandStory** platform locally:
 
 * [FIX_DATABASE_ERROR.md](FIX_DATABASE_ERROR.md): Instructions to resolve common database issues.
 * [PAYMENT_FORM_UPDATE.md](PAYMENT_FORM_UPDATE.md): Guide to updating payment forms.
+
