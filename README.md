@@ -168,10 +168,6 @@ StitchandStory/
 │   ├── cart.php              # Shopping cart
 │   ├── checkout.php          # Checkout process
 │   └── orders.php            # Order history
-├── admin/
-│   ├── dashboard.php
-│   ├── manage_products.php
-│   └── manage_orders.php
 ├── .htaccess                 # URL rewriting rules
 └── README.md
 ```
@@ -187,19 +183,6 @@ StitchandStory/
 
 ---
 
-## 🧪 Testing
-
-### Sample Products
-
-The application includes 8 pre-loaded sample products:
-- Crochet Keychain ($5.99)
-- Crochet Dress ($49.99)
-- Crochet Wall Hanging ($29.99)
-- Crochet Bag ($35.99)
-- Crochet Coasters Set ($12.99)
-- Crochet Baby Blanket ($39.99)
-- Crochet Earrings ($8.99)
-- Crochet Planter ($18.99)
 
 ### Test User Accounts
 
@@ -268,19 +251,6 @@ Contributions are welcome! Here's how you can help:
 
 ---
 
-## 📝 License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
----
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/mariyageorge/StitchandStory/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/mariyageorge/StitchandStory/discussions)
-- **Email**: [Contact via GitHub](https://github.com/mariyageorge)
-
----
 
 ## 🙏 Acknowledgments
 
@@ -308,3 +278,4 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ---
 
 *Made with love by the StitchandStory Team*
+
