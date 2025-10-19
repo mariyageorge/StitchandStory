@@ -1,4 +1,5 @@
 
+````markdown
 # StitchandStory
 
 **A beginner-friendly crafting platform offering knitting, crochet, and cross-stitch kits with step-by-step tutorials.**
@@ -105,3 +106,13 @@ Follow these steps to deploy **StitchandStory** locally:
 5. Open a pull request detailing your changes.
 
 ---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+```
+
+---
+
+```
